@@ -1,0 +1,43 @@
+@import '../../../variables';
+
+.mat-table-responsive {
+  overflow-x: auto;
+  max-width: 100%;
+}
+table {
+  .td-center {
+    text-align: center;
+  }
+  img {
+    margin: 1rem 0;
+    &.house {
+      height: 6rem;
+    }
+    &.actor {
+      max-height: 10rem;
+      border-radius: 10px;
+      box-shadow: 6px 6px 2px #aaa;
+      
+      &.gryffindor {
+        box-shadow: 6px 6px 2px $gryffindor-color;
+      }
+      &.slytherin {
+        box-shadow: 6px 6px 2px $slytherin-color;
+      }
+      &.ravenclaw {
+        box-shadow: 6px 6px 2px $ravenclaw-color;
+      }
+      &.hufflepuff {
+        box-shadow: 6px 6px 2px $hufflepuff-color;
+      }
+    }
+    .house {
+      font-weight: bold;
+      text-shadow: 0 0 2px #333;
+    }
+  }
+}
+p {
+  color: white;
+  margin-left: 1rem;
+}
