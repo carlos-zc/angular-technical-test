@@ -73,6 +73,7 @@
   <!-- <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of data"></mat-paginator> -->
   
 </div>
+<mat-spinner class="loading-spinner" *ngIf="(!data.length && !houseSection) || (!data.length && houseSelected)"></mat-spinner>
 
 <p *ngIf="!houseSelected && houseSection">
   * You must select a house
